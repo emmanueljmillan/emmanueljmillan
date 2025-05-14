@@ -11,6 +11,7 @@ export default {
           // light: 'rgb(0, 150, 150)',
           light: "#672c8e", //Color for light mode, purple
           dark: "#00E5CF", //Color for dark mode, aqua
+        },
       },
       fontFamily: {
         "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
