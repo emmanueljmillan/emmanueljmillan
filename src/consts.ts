@@ -43,7 +43,7 @@ export const LINKS: Links = [
   },
   { 
     TEXT: "Experience", 
-    HREF: "/Experience", 
+    HREF: "/experience", 
   },
   
 //Removing Blog
