@@ -6,6 +6,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        highlightLight: "#672c8e", //Highlight color light mode
+        highlightDark: "#00E5CF", //Highlight color for dark mode 
       fontFamily: {
         "sans": ["Atkinson", ...defaultTheme.fontFamily.sans],
       },
