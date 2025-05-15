@@ -259,4 +259,5 @@ const canvasDotsBg = function () {
   };
 };
 
+window.canvasDotsBg = canvasDotsBg; // Makes the function globally accessible
 export default canvasDotsBg;
