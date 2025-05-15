@@ -2,10 +2,11 @@
 type Props = {
   text: string
   icon: string
-  href?: string  // <- href is now optional
+  href?: string
 }
 
-const { text, icon, href } = Astro.props
+const { text, icon, href } = Astro.props;
+const iconPath = icon.startsWith("/icons/") ? icon : `/icons/${icon}`;
 ---
 
 {href ? (
