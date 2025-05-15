@@ -1,102 +1,98 @@
 ---
-import { getCollection } from "astro:content";
-import PageLayout from "@layouts/PageLayout.astro";
-import ArrowCard from "@components/ArrowCard";
-import StackCard from "@components/StackCard.astro";
-import { SITE, SOCIALS } from "@consts";
-import TwinklingStars from "@components/TwinklingStars.astro";
-import MeteorShower from "@components/MeteorShower.astro";
+import { getCollection } from "astro:content"
+import PageLayout from "@layouts/PageLayout.astro"
+import ArrowCard from "@components/ArrowCard"
+import StackCard from "@components/StackCard.astro"
+import { SITE, SOCIALS } from "@consts"
+import TwinklingStars from "@components/TwinklingStars.astro"
+import MeteorShower from "@components/MeteorShower.astro"
 
 const posts = (await getCollection("blog"))
   .filter(post => !post.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
+  .slice(0,3)
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-  .slice(0, 3);
+  .slice(0,3)
 
 const stack = [
-  { text: "MATLAB", icon: "/icons/matlab.png" },
-  { text: "Python", icon: "/icons/python.png" },
-  { text: "MS Office", icon: "/icons/office.png" },
-  { text: "Arduino", icon: "/icons/arduino.png" },
-  { text: "R Studio", icon: "/icons/rstudio.png" },
-  { text: "SolidWorks", icon: "/icons/solidworks.png" },
-  { text: "ImageJ", icon: "/icons/imagej.png" },
-  { text: "SAS JMP", icon: "/icons/sasjmp.png" },
-  { text: "LabView", icon: "/icons/labview.png" }
-];
+  { 
+    text: "MATLAB", 
+    icon: "/icons/matlab.png", 
+    //href: "https://astro.build" 
+  },
+  { 
+    text: "Python", 
+    icon: "/icons/python.png", 
+    //href: "https://www.javascript.com" 
+  },
+  { 
+    text: "MS Office", 
+    icon: "/icons/office.png", 
+    //href: "https://www.typescriptlang.org" 
+  },
+  { 
+    text: "Arduino", 
+    icon: "/icons/arduino.png", 
+    //href: "https://tailwindcss.com" 
+  },
+  {
+    text: "R Studio",
+    icon: "/icons/rstudio.png",
+    //href: "https://R.com"
+  },
+  {
+    text: "SolidWorks",
+    icon: "/icons/solidworks.png",
+    //href: "https://solidworks.com"
+  },
+  {
+    text: "ImageJ",
+    icon: "/icons/imagej.png",
+    //href: "https://imagej.com"
+  },
+  {
+    text: "SAS JMP",
+    icon: "/icons/sasjmp.png",
+    //href: "https://sasjmp.com"
+  },
+  {
+    text: "LabView",
+    icon: "/icons/labview.png",
+    //href: "https://labview.com"
+  },
+]
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
 
-  <!-- Remove Background from HTML & BODY -->
-  <style>
-    html, body {
-      background: none !important;
-    }
-
-    .canvas-2 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: -1;
-    }
-  </style>
-
   <!-- Light Mode: Particles -->
-  <div class="absolute inset-0 block dark:hidden">
-    <div id="particles1" class="fixed inset-0"></div>
-    <div id="particles2" class="fixed inset-0"></div>
-    <div id="particles3" class="fixed inset-0"></div>
+  <div class='absolute inset-0 block dark:hidden'>
+    <div id='particles1' class='fixed inset-0'></div>
+    <div id='particles2' class='fixed inset-0'></div>
+    <div id='particles3' class='fixed inset-0'></div>
   </div>
 
   <!-- Dark Theme: Stars -->
-  <div class="absolute inset-0 bg-black hidden dark:block">
-    <div id="stars1" class="fixed inset-0"></div>
-    <div id="stars2" class="fixed inset-0"></div>
-    <div id="stars3" class="fixed inset-0"></div>
+  <div class='absolute inset-0 bg-black hidden dark:block'>
+    <div id='stars1' class='fixed inset-0'></div>
+    <div id='stars2' class='fixed inset-0'></div>
+    <div id='stars3' class='fixed inset-0'></div>
   </div>
 
-  <!-- Commented Out Old Background Elements -->
-  <!--
+  <!-- Dark Theme: Twinkling Stars / Metors -->
+<!--
   <div id="galaxy" class="fixed inset-0">
     <div class="hidden dark:block">
       <TwinklingStars/>
       <MeteorShower/>
     </div>
   </div>
-  -->
-
-  <!-- Old Background Scripts (Commented Out) -->
-  <!--
+-->
   <script is:inline src="/js/bg.js"></script>
-  -->
 
-  <!-- Load the New Background Canvas Script -->
-  <script src="/js/bgCanvas.js"></script>
-  <canvas class="canvas-2"></canvas>
-
-  <!-- Ensure the New Background Script Runs on Page Load -->
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.documentElement.style.background = "none";
-      document.body.style.background = "none";
-
-      // Ensure canvasDotsBg function is accessible
-      if (typeof window.canvasDotsBg === "function") {
-        window.canvasDotsBg();
-      } else {
-        console.error("canvasDotsBg is not recognized!");
-      }
-    });
-  </script>
-  
   <!-- HERO -->
   <section class="relative h-screen w-full">
 <!--
@@ -145,6 +141,8 @@ const stack = [
             to academic involvement in <b><i class="text-highlight-light dark:text-highlight-dark">Neuroscience Research</i></b> at  
             <b><i class="text-highlight-light dark:text-highlight-dark">The Miami Project to Cure Paralysis</i></b>!
           </p>
+          <p>I'm a lifelong learner! My goal is to enter the world of neural prosthetics and become involved in the design and production of prosthetic limbs. </p>
+          <p>I graduated in 2022 from the University of Miami, wherefrom I hold a Bachelor of Science specialized in both Biomedical Engineering and Applied Mathematical Sciences. I have since worked extensively in research involving medical ultrasound and endoscopes, and have involvement in regulatory affairs.</p>
           <p>I'm a lifelong learner! My goal is to enter the world of Neural Prosthetics and become involved in the design and production of prosthetic limbs. </p>
           <p>I graduated in 2022 from the University of Miami, wherefrom I hold a Bachelor of Science specialized in both Biomedical Engineering and Applied Mathematical Sciences. I have since worked extensively in research involving medical ultrasound and endoscopes, alongside involvement in regulatory affairs.</p>
           <p>Currently exploring Python and improving my Machine Learning skills!</p>
