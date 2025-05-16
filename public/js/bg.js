@@ -26,29 +26,6 @@
     const particles1 = document.getElementById('particles1');
     const particles2 = document.getElementById('particles2');
     const particles3 = document.getElementById('particles3');
-    const leftIndent = document.createElement("div");
-    const rightIndent = document.createElement("div");
-    
-    leftIndent.style.cssText = `
-      position: absolute;
-      left: 0;
-      width: 10vw; /* Adjust width for the indent */
-      height: 50vh; /* Cover only bottom half */
-      bottom: 0;
-      box-shadow: ${generateParticles(500)};
-    `;
-    
-    rightIndent.style.cssText = `
-      position: absolute;
-      right: 0;
-      width: 10vw;
-      height: 50vh;
-      bottom: 0;
-      box-shadow: ${generateParticles(500)};
-    `;
-    
-    document.body.appendChild(leftIndent);
-    document.body.appendChild(rightIndent);
 
     if (particles1) {
       particles1.style.cssText = `
