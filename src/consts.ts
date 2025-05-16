@@ -3,7 +3,7 @@ import type { Site, Page, Links, Socials } from "@types"
 // Global
 export const SITE: Site = {
   TITLE: "Emmanuel Millan",
-  DESCRIPTION: "Welcome to my Portfolio! Template from AstroSphere, developed by Mark Horn.",
+  DESCRIPTION: "Welcome to my Portfolio!",
   AUTHOR: "Emmanuel Millan",
 }
 
