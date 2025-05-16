@@ -3,7 +3,7 @@ title: "One Hundred Cups of Coffee-tude"
 summary: "A caffeine-powered algorithm intent on determining what makes the best cup of joe."
 date: "July 20 2025"
 draft: false
-tags:On
+tags:
 - Python
 - Machine Learning
 ---
