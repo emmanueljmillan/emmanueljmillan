@@ -20,7 +20,7 @@ export default function ArrowCard({entry, pill}: Props) {
             {formatDate(entry.data.date)}
           </div>
         </div>
-        <div class="font-semibold mt-3 text-black dark:text-white">
+        <div class="font-semibold mt-3 text-highlight-light dark:text-highlight-dark">
           {entry.data.title}
         </div>
 
@@ -29,7 +29,7 @@ export default function ArrowCard({entry, pill}: Props) {
         </div>
         <ul class="flex flex-wrap mt-2 gap-1">
           {entry.data.tags.map((tag:string) => ( // this line has an error; Parameter 'tag' implicitly has an 'any' type.ts(7006)
-            <li class="text-xs uppercase py-0.5 px-1 rounded bg-black/5 dark:bg-white/20 text-black/75 dark:text-white/75">
+            <li class="text-xs uppercase py-0.5 px-1 rounded bg-highlight-light/5 dark:bg-highlight-dark/20 text-black/75 dark:text-white/75">
               {tag}
             </li>
           ))}
