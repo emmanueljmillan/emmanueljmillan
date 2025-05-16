@@ -221,3 +221,11 @@ article img {
 .copy-svg {
   @apply w-full aspect-square text-white opacity-70 hover:opacity-90;
 }
+
+.custom-purp {
+  color: #c55eed;
+}
+
+.custom-blue {
+  color: #00e5cf;
+}
