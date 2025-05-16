@@ -221,22 +221,3 @@ article img {
 .copy-svg {
   @apply w-full aspect-square text-white opacity-70 hover:opacity-90;
 }
-
-/* Custom Background Effects */
-
-.left-indent, .right-indent {
-  position: absolute;
-  width: 10vw;
-  height: 50vh;
-  bottom: 0;
-}
-
-.left-indent {
-  left: 0;
-  box-shadow: var(--generated-particles);
-}
-
-.right-indent {
-  right: 0;
-  box-shadow: var(--generated-particles);
-}
