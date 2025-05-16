@@ -1,5 +1,5 @@
 ---
-title: "Sense and Spatial Frequency"
+title: "<strong class="text-highlight-light dark:text-highlight-dark">Sense and Spatial Frequency</strong>"
 summary: "Using MATLAB App Designer to build a GUI for evaluating the Contrast Transfer Function (CTF) of different endoscopes."
 date: "Feb 28 2025"
 draft: false
