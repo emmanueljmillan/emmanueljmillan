@@ -1,7 +1,7 @@
 ---
-title: "Project Three"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 16 2022"
+title: "On the Attenuation of Species"
+summary: "A MATLAB GUI for analyzing acoustic signals and calculating fourier series. Also finds central frequency, power spectrum, and signal attenuation!"
+date: "Nov 20 2024"
 draft: false
 tags:
 - Vue
