@@ -1,7 +1,7 @@
 ---
 title: "Contrast Transfer Function GUI for Endoscopes"
 summary: "Using MATLAB App Designer to build a GUI for evaluating the Contrast Transfer Function (CTF) of different endoscopes."
-date: "Mar 18 2022"
+date: "Feb 28 2025"
 draft: false
 tags:
 - MATLAB
