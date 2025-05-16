@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        'custom-blue': "#00e5cf",
+        'custom-purp': '#c55eed',
         highlight: {
           // light: 'rgb(0, 150, 150)',
           light: "#c55eed", //Color for light mode, purple
