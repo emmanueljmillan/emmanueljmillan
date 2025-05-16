@@ -1,16 +1,14 @@
 ---
-title: "Project One"
-summary: "Lorem ipsum dolor sit amet"
+title: "Contrast Transfer Function GUI for Endoscopes"
+summary: "Using MATLAB App Designer to build a GUI for evaluating the Contrast Transfer Function (CTF) of different endoscopes."
 date: "Mar 18 2022"
 draft: false
 tags:
 - MATLAB
-- Javascript
-- Typescript
-- Tailwind
-- SolidJs
+- GUI
+- Image Processing
 demoUrl: https://astro-sphere-demo.vercel.app
 repoUrl: https://github.com/markhorn-dev/astro-sphere
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Endoscope manufacturers must adhere to specific ISO standards governing image properties to ensure high-quality imaging and patient safety. The Contrast Transfer Function (CTF) serves as a mathematical framework for quantifying how aberrations within a device impact image fidelity. New products seeking FDA pre-market notification require demonstrating both ISO compliance and substantial equivalence- showing similar or significantly improved optical performance compared to a predicate device (a previously approved medical device with the same intended use).
