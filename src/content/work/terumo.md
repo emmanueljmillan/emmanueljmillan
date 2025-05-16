@@ -5,7 +5,7 @@ dateStart: "06/1/2022"
 dateEnd: "12/01/2022"
 ---
 
-Terumo Aortic is a medical device manufacturer involved in the production of <span class="font-semibold dark:font-bold dark:text-white">stent-grafts</span> for the treatment of <span class="font-semibold dark:font-bold dark:text-white">aortic aneurysms</span> to prevent reinjury. Their stent-grafts are designed for insertion and deployment from the <span class="font-semibold dark:font-bold dark:text-white">abdominal aorta</span> to the <span class="font-semibold dark:font-bold dark:text-white">descending aorta</span>.
+Terumo Aortic is a medical device manufacturer involved in the production of <span class="font-semibold dark:font-bold dark:text-white">stent-grafts</span> for the treatment of <span class="font-semibold dark:font-bold dark:text-white">aortic aneurysms</span> to prevent reinjury. Their stent-grafts are designed for insertion and deployment from the <span class="font-semibold dark:font-bold dark:text-white">abdominal aorta</span> to the <span class="font-semibold dark:font-bold dark:text-white">ascending aorta</span>.
 
 - Evaluated stent-graft deployment forces into 3D aorta vasculature model using force transducers.
 - Worked in engineering team for the development of new products, as well as investigating non-compliant devices. 
