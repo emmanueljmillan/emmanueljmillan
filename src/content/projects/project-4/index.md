@@ -1,12 +1,11 @@
 ---
-title: "Project Four"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 15 2022"
+title: "One Hundred Cups of Coffee-tude"
+summary: "A caffeine-powered algorithm intent on determining what makes the best cup of joe."
+date: "July 20 2025"
 draft: false
-tags:
-- React
-- Javascript
-- StyleX
+tags:On
+- Python
+- Machine Learning
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. 
