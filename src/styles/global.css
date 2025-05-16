@@ -221,8 +221,9 @@ article img {
 .copy-svg {
   @apply w-full aspect-square text-white opacity-70 hover:opacity-90;
 }
+
 /* Custom Background Effects */
-}
+
 .left-indent, .right-indent {
   position: absolute;
   width: 10vw;
