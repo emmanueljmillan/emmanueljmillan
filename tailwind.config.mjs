@@ -9,7 +9,7 @@ export default {
       colors: {
         highlight: {
           // light: 'rgb(0, 150, 150)',
-          light: "#672c8e", //Color for light mode, purple
+          light: "#c55eed", //Color for light mode, purple
           dark: "#00E5CF", //Color for dark mode, aqua
         },
       },
