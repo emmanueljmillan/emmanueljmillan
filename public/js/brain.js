@@ -29,7 +29,7 @@ const columns = Math.floor(canvas.width / 15);
 const drops = Array(columns).fill(0);
 
 function drawMatrix() {
-    ctx.fillStyle = "#00ff00";
+    ctx.fillStyle = "#red";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     ctx.fillStyle = "#00ff00";
