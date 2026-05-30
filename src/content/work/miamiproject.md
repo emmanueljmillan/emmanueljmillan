@@ -14,4 +14,3 @@ The Miami Project to Cure Paralysis is a research center at the <span class="fon
 - Supported <span class="font-semibold dark:font-bold dark:text-white">in vivo wound-healing studies</span>, including assisting in <span class="font-semibold dark:font-bold dark:text-white">rat surgeries</span> and image processing using <span class="font-semibold dark:font-bold dark:text-white">Fiji (ImageJ)</span>.
 - Used <span class="font-semibold dark:font-bold dark:text-white">aseptic technique</span> to maintain cultures of <span class="font-semibold dark:font-bold dark:text-white">Schwann cells</span>, <span class="font-semibold dark:font-bold dark:text-white">fibroblasts</span>, and <span class="font-semibold dark:font-bold dark:text-white">iBMDMs</span>.
 - Evaluated cell culture purity and performed <span class="font-semibold dark:font-bold dark:text-white">cell viability assays</span> for Schwann cell cultures.
-```
