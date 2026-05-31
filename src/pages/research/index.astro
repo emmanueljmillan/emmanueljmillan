@@ -1,3 +1,4 @@
+```astro
 ---
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
@@ -7,8 +8,14 @@ import { RESEARCH } from "@consts"
 
 <PageLayout title={RESEARCH.TITLE} description={RESEARCH.DESCRIPTION}>
   <TopLayout>
-    <div class="animate page-heading">
-      {RESEARCH.TITLE}
+    <div class="animate">
+      <div class="page-heading text-highlight-light dark:text-highlight-dark">
+        {RESEARCH.TITLE}
+      </div>
+
+      <div class="text-sm uppercase tracking-widest mt-2 opacity-75">
+        Master's Thesis • NeuSTEM Lab • University of Miami
+      </div>
     </div>
   </TopLayout>
 
@@ -16,7 +23,7 @@ import { RESEARCH } from "@consts"
     <article class="prose dark:prose-invert max-w-none animate">
       <section>
         <p class="text-lg">
-          My master’s thesis research focuses on
+          My master’s thesis research focused on
           <span class="font-semibold dark:font-bold dark:text-white">Schwann cell–nanoparticle interactions</span>
           in neural lesion models, with an emphasis on biomaterial design,
           cellular uptake, and applications in
@@ -28,11 +35,13 @@ import { RESEARCH } from "@consts"
       <section class="mt-10">
         <h2>Research Poster</h2>
 
-        <img
-          src="/research/poster.png"
-          alt="Master's thesis research poster"
-          class="rounded-xl border border-black/10 dark:border-white/25 shadow-sm"
-        />
+        <a href="/research/poster.png" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/research/poster.png"
+            alt="Master's thesis research poster"
+            class="rounded-xl border border-black/10 dark:border-white/25 shadow-sm"
+          />
+        </a>
 
         <p>
           <a
@@ -101,3 +110,4 @@ import { RESEARCH } from "@consts"
     </article>
   </BottomLayout>
 </PageLayout>
+```
