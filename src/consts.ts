@@ -13,15 +13,11 @@ export const WORK: Page = {
   DESCRIPTION: "Places I have worked.",
 }
 
-//Removing Blog
-/*
-// Blog Page
-export const BLOG: Page = {
-  TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
+// Research Page
+export const RESEARCH: Page = {
+  TITLE: "Research",
+  DESCRIPTION: "Subject of Master's Thesis.",
 }
-*/
-//Ending comment
 
 // Projects Page 
 export const PROJECTS: Page = {
@@ -46,14 +42,10 @@ export const LINKS: Links = [
     HREF: "/experience", 
   },
   
-//Removing Blog
-/*
   { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
+    TEXT: "Research", 
+    HREF: "/research", 
   },
-*/  
-//Ending comment
   
   { 
     TEXT: "Projects", 
