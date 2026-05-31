@@ -1,111 +1,176 @@
 ---
+
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
 import { RESEARCH } from "@consts"
----
+----------------------------------
 
 <PageLayout title={RESEARCH.TITLE} description={RESEARCH.DESCRIPTION}>
   <TopLayout>
     <div class="animate">
-      <div class="page-heading text-highlight-light dark:text-highlight-dark">
-        {RESEARCH.TITLE}
-      </div>
+      <h1 class="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-purple-600 to-indigo-500 bg-clip-text text-transparent">
+        Research
+      </h1>
 
-      <div class="text-sm uppercase tracking-widest mt-2 opacity-75">
-        Master's Thesis • NeuSTEM Lab • University of Miami
-      </div>
-    </div>
+```
+  <div class="text-sm uppercase tracking-widest mt-3 opacity-75">
+    MASTER'S THESIS • NEUSTEM LAB • UNIVERSITY OF MIAMI
+  </div>
+</div>
+```
+
   </TopLayout>
 
   <BottomLayout>
     <article class="prose dark:prose-invert max-w-none animate">
-      <section>
-        <p class="text-lg">
-          My master’s thesis research focused on
-          <span class="font-semibold dark:font-bold dark:text-white">Schwann cell–nanoparticle interactions</span>
-          in neural lesion models, with an emphasis on biomaterial design,
-          cellular uptake, and applications in
-          <span class="font-semibold dark:font-bold dark:text-white">spinal cord injury</span>
-          research.
-        </p>
-      </section>
 
-      <section class="mt-10">
-        <h2>Research Poster</h2>
+```
+  <section>
+    <p class="text-lg">
+      My master's thesis research focused on
+      <span class="font-semibold dark:font-bold dark:text-white">
+        Schwann cell-nanoparticle interactions
+      </span>
+      in neural lesion models, with an emphasis on biomaterial design,
+      cellular uptake, and applications in
+      <span class="font-semibold dark:font-bold dark:text-white">
+        spinal cord injury
+      </span>
+      research.
+    </p>
+  </section>
 
-        <a href="/research/poster.png" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/research/poster.png"
-            alt="Master's thesis research poster"
-            class="rounded-xl border border-black/10 dark:border-white/25 shadow-sm"
-          />
-        </a>
+  <section class="mt-10">
+    <h2>Research Poster</h2>
 
-        <p>
-          <a
-            href="/research/poster.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="font-semibold"
-          >
-            Download full poster as PDF
-          </a>
-        </p>
-      </section>
+    <a
+      href="/research/poster.png"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        src="/research/poster.png"
+        alt="Master's thesis research poster"
+        class="rounded-xl border border-black/10 dark:border-white/25 shadow-sm"
+      />
+    </a>
 
-      <section class="mt-10">
-        <h2>Project Overview</h2>
+    <p>
+      <a
+        href="/research/poster.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-semibold"
+      >
+        Download full poster as PDF
+      </a>
+    </p>
+  </section>
 
-        <p>
-          This project investigates how engineered
-          <span class="font-semibold dark:font-bold dark:text-white">chondroitin sulfate nanoparticles</span>
-          interact with cells and biological debris in lesion-like environments.
-          The broader goal is to better understand how nanoparticle properties
-          may influence uptake, compatibility, and potential therapeutic delivery
-          in nervous system injury models.
-        </p>
-      </section>
+  <section class="mt-10">
+    <h2>Project Overview</h2>
 
-      <section class="mt-10">
-        <h2>Key Research Questions</h2>
+    <p>
+      This project investigates how engineered
+      <span class="font-semibold dark:font-bold dark:text-white">
+        chondroitin sulfate nanoparticles
+      </span>
+      interact with cells and biological debris in lesion-like environments.
+      The broader goal is to better understand how nanoparticle properties
+      influence uptake, compatibility, and potential therapeutic delivery
+      in nervous system injury models.
+    </p>
+  </section>
 
-        <ul>
-          <li>How do Schwann cells interact with engineered nanoparticles?</li>
-          <li>How does nanoparticle dose affect cellular uptake and viability?</li>
-          <li>Can nanoparticle systems be studied alongside myelin debris in neural lesion models?</li>
-          <li>How can biomaterial properties be tuned for regenerative medicine applications?</li>
-        </ul>
-      </section>
+  <section class="mt-10">
+    <h2>Key Research Questions</h2>
 
-      <section class="mt-10">
-        <h2>Methods & Techniques</h2>
+    <ul>
+      <li>How do Schwann cells interact with engineered nanoparticles?</li>
+      <li>How does nanoparticle dose affect cellular uptake and viability?</li>
+      <li>Can nanoparticle systems be studied alongside myelin debris in neural lesion models?</li>
+      <li>How can biomaterial properties be tuned for regenerative medicine applications?</li>
+    </ul>
+  </section>
 
-        <ul>
-          <li><span class="font-semibold dark:font-bold dark:text-white">Schwann cell culture</span> and cell maintenance</li>
-          <li><span class="font-semibold dark:font-bold dark:text-white">Nanoparticle synthesis</span> and characterization</li>
-          <li><span class="font-semibold dark:font-bold dark:text-white">Confocal microscopy</span> for uptake analysis</li>
-          <li><span class="font-semibold dark:font-bold dark:text-white">MTS, DMMB, and BCA assays</span></li>
-          <li><span class="font-semibold dark:font-bold dark:text-white">CNS myelin debris isolation</span></li>
-          <li><span class="font-semibold dark:font-bold dark:text-white">Fiji/ImageJ</span> image processing</li>
-          <li>Assistance with <span class="font-semibold dark:font-bold dark:text-white">rat surgeries</span> for wound-healing studies</li>
-        </ul>
-      </section>
+  <section class="mt-10">
+    <h2>Methods and Techniques</h2>
 
-      <section class="mt-10">
-        <h2>Research Significance</h2>
+    <ul>
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          Schwann cell culture
+        </span>
+        and cell maintenance
+      </li>
 
-        <p>
-          Spinal cord injury creates a complex lesion environment involving
-          cellular stress, inflammatory signaling, myelin debris, and limited
-          regenerative capacity. This research contributes to the development of
-          biomaterial-based strategies that may support future approaches in
-          <span class="font-semibold dark:font-bold dark:text-white">neural repair</span>,
-          <span class="font-semibold dark:font-bold dark:text-white">drug delivery</span>,
-          and
-          <span class="font-semibold dark:font-bold dark:text-white">regenerative medicine</span>.
-        </p>
-      </section>
-    </article>
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          Nanoparticle synthesis
+        </span>
+        and characterization
+      </li>
+
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          Confocal microscopy
+        </span>
+        for uptake analysis
+      </li>
+
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          MTS, DMMB, and BCA assays
+        </span>
+      </li>
+
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          CNS myelin debris isolation
+        </span>
+      </li>
+
+      <li>
+        <span class="font-semibold dark:font-bold dark:text-white">
+          Fiji/ImageJ
+        </span>
+        image processing
+      </li>
+
+      <li>
+        Assistance with
+        <span class="font-semibold dark:font-bold dark:text-white">
+          rat surgeries
+        </span>
+        for wound-healing studies
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-10">
+    <h2>Research Significance</h2>
+
+    <p>
+      Spinal cord injury creates a complex lesion environment involving
+      cellular stress, inflammatory signaling, myelin debris, and limited
+      regenerative capacity. This research contributes to the development
+      of biomaterial-based strategies that may support future approaches in
+      <span class="font-semibold dark:font-bold dark:text-white">
+        neural repair
+      </span>,
+      <span class="font-semibold dark:font-bold dark:text-white">
+        drug delivery
+      </span>,
+      and
+      <span class="font-semibold dark:font-bold dark:text-white">
+        regenerative medicine
+      </span>.
+    </p>
+  </section>
+
+</article>
+```
+
   </BottomLayout>
 </PageLayout>
