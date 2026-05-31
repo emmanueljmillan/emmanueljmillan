@@ -1,4 +1,5 @@
 ---
+
 import PageLayout from "@layouts/PageLayout.astro"
 import TopLayout from "@layouts/TopLayout.astro"
 import BottomLayout from "@layouts/BottomLayout.astro"
@@ -15,30 +16,27 @@ import { RESEARCH } from "@consts"
   <div class="text-sm uppercase tracking-widest mt-3 opacity-75">
     MASTER'S THESIS • NEUSTEM LAB • UNIVERSITY OF MIAMI
   </div>
+
+  <p class="text-lg mt-6 max-w-3xl">
+    My master's thesis research focused on
+    <span class="font-semibold dark:font-bold dark:text-white">
+      Schwann cell-nanoparticle interactions
+    </span>
+    in neural lesion models, with an emphasis on biomaterial design,
+    cellular uptake, and applications in
+    <span class="font-semibold dark:font-bold dark:text-white">
+      spinal cord injury
+    </span>
+    research.
+  </p>
 </div>
 
   </TopLayout>
 
   <BottomLayout>
     <article class="prose dark:prose-invert max-w-none animate">
-
-  <section>
-    <p class="text-lg">
-      My master's thesis research focused on
-      <span class="font-semibold dark:font-bold dark:text-white">
-        Schwann cell-nanoparticle interactions
-      </span>
-      in neural lesion models, with an emphasis on biomaterial design,
-      cellular uptake, and applications in
-      <span class="font-semibold dark:font-bold dark:text-white">
-        spinal cord injury
-      </span>
-      research.
-    </p>
-  </section>
-
-  <section class="mt-10">
-    <h2>Research Poster</h2>
+      <section>
+        <h2>Research Poster</h2>
 
     <a
       href="/research/poster.png"
@@ -164,7 +162,6 @@ import { RESEARCH } from "@consts"
       </span>.
     </p>
   </section>
-
 </article>
 
   </BottomLayout>
